@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+
+:root {
+  --main: #007d70;
+  --main-rgb: 0, 125, 112;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: var(--main);
+  border-radius: 50%;
+  font-size: 2.5em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: var(--main);
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+header nav a:nth-child(6) {
+  margin-right: 0;
+}
+
+.intro {
+  background: url(../img/intro.jpg);
+  background-size: cover;
+  height: 450px;
+  background-position: center center;
+}
+
+.intro .container {
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--main-rgb), 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .container .text {
+  color: white;
+  text-align: center;
+}
+
+.intro .container .text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.intro .container .text p {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
+.intro .container .text button {
+  padding: 10px 40px;
+  border-radius: 32px;
+  border: none;
+  color: white;
+  background: goldenrod;
+  border: 1px solid goldenrod;
+  cursor: pointer;
+}
+
+.intro .container .text button:hover {
+  transition: ease all 0.3s;
+  color: goldenrod;
+  background: white;
+}
+
+main {
+  width: 100%;
+}
+
+main .welcome {
+  padding: 40px 0;
+}
+
+main .welcome .text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .welcome .text h2 {
+  color: var(--main);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+main .welcome .text p {
+  font-weight: 300;
+}
+
+main .welcome .content {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 200px;
+  justify-content: center;
+  grid-column-gap: 30px;
+}
+
+main .welcome .content > div {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main .welcome .content > div .container {
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--main-rgb), 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+main .welcome .content > .comfort {
+  background: url(../img/welcome/01.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+main .welcome .content > .reliability {
+  background: url(../img/welcome/02.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+main .welcome .content > .design {
+  background: url(../img/welcome/03.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+main .recent {
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+main .recent .text {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .recent .text h2 {
+  color: var(--main);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+main .recent .text p {
+  font-weight: 300;
+}
+
+main .recent .images {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 200px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+main .recent .images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+main .recent button {
+  padding: 10px 40px;
+  border-radius: 32px;
+  border: none;
+  color: white;
+  background: goldenrod;
+  border: 1px solid goldenrod;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+main .recent button:hover {
+  transition: ease all 0.3s;
+  color: goldenrod;
+  background: white;
+}
+
+main .testimonial {
+  padding: 80px 0;
+}
+
+main .testimonial h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.2em;
+  color: var(--main);
+}
+
+main .testimonial .glide__bullets {
+  display: flex;
+  justify-content: center;
+}
+
+main .testimonial .glide__bullets button {
+  padding: 10px 30px;
+  margin: 0 10px;
+  border-radius: 0;
+  border: none;
+  background: rgba(245, 150, 34, 0.8);
+  cursor: pointer;
+}
+
+main .testimonial .glide__bullets button:hover {
+  transition: all ease 0.3s;
+  background: rgb(245, 150, 34);
+}
+
+main .testimonial .glide__bullets .glide__bullet--active {
+  background: rgb(245, 150, 34);
+}
+
+main .testimonial .glide__slide {
+  padding: 40px 0;
+  text-align: center;
+}
+
+main .testimonial .glide__slide > p {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+main .testimonial .glide__slide .info i {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+main .testimonial .glide__slide .info .name {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+}
+
+main .testimonial .glide__slide .info .name p {
+  margin: 0 10px;
+  color: var(--main);
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+main .testimonial .glide__slide .info .name hr {
+  width: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: url(../img/footer.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+footer .info {
+  padding: 60px 0;
+  background: rgba(var(--main-rgb), 0.6);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+footer .info h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+footer .info p {
+  font-size: 1.2em;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+footer .copy {
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .icons i {
+  margin-right: 20px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+footer .icons i:nth-child(5) {
+  margin-right: 0;
+}
